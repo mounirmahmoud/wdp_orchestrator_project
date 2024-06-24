@@ -17,7 +17,7 @@ query1 = [
 ]
 
 def count1(**context):
-    dwh_hook = SnowflakeHook(snowflake_conn_id="my_snowflake_conn")
+    dwh_hook = SnowflakeHook(snowflake_conn_id="wedp_snowflake_con")
     result = dwh_hook.get_first("select count(*) from wdp_staging.staging.my_first_dbt_model")
     logging.info("Number of rows in `wdp_staging.staging.my_first_dbt_model`  - %s", result[0])
 
@@ -30,7 +30,7 @@ with dag:
     query1_exec = SnowflakeOperator(
         task_id="snowfalke_task1",
         sql=query1,
-        snowflake_conn_id="my_snowflake_conn",
+        snowflake_conn_id="wedp_snowflake_con",
     )
 
     count_query1 = PythonOperator(task_id="count_query1", python_callable=count1)

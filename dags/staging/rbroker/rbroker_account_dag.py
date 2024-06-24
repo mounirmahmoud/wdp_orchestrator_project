@@ -3,7 +3,6 @@ from airflow.providers.postgres.operators.postgres import PostgresOperator
 from airflow.providers.postgres.hooks.postgres import PostgresHook
 from pendulum import datetime
 
-
 @dag(
     start_date=datetime(2023, 1, 1), max_active_runs=3, schedule="@daily", catchup=False, tags=["rbroker"]
 )
