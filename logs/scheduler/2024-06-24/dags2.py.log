@@ -1,0 +1,52 @@
+[2024-06-24T01:54:10.031+0000] {processor.py:157} INFO - Started process (PID=261) to work on /opt/airflow/dags/dags2.py
+[2024-06-24T01:54:10.033+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dags2.py for tasks to queue
+[2024-06-24T01:54:10.038+0000] {logging_mixin.py:154} INFO - [2024-06-24T01:54:10.037+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dags2.py
+[2024-06-24T01:54:10.047+0000] {logging_mixin.py:154} INFO - [2024-06-24T01:54:10.045+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/dags2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags2.py", line 2
+    f rom airflow.operators.empty import EmptyOperator
+      ^
+SyntaxError: invalid syntax
+[2024-06-24T01:54:10.049+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/dags2.py
+[2024-06-24T01:54:10.086+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags2.py took 0.062 seconds
+[2024-06-24T01:54:40.397+0000] {processor.py:157} INFO - Started process (PID=271) to work on /opt/airflow/dags/dags2.py
+[2024-06-24T01:54:40.401+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dags2.py for tasks to queue
+[2024-06-24T01:54:40.408+0000] {logging_mixin.py:154} INFO - [2024-06-24T01:54:40.407+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dags2.py
+[2024-06-24T01:54:40.420+0000] {logging_mixin.py:154} INFO - [2024-06-24T01:54:40.417+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/dags2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags2.py", line 2
+    f rom airflow.operators.empty import EmptyOperator
+      ^
+SyntaxError: invalid syntax
+[2024-06-24T01:54:40.421+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/dags2.py
+[2024-06-24T01:54:40.452+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags2.py took 0.066 seconds
+[2024-06-24T01:54:59.606+0000] {processor.py:157} INFO - Started process (PID=280) to work on /opt/airflow/dags/dags2.py
+[2024-06-24T01:54:59.608+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dags2.py for tasks to queue
+[2024-06-24T01:54:59.612+0000] {logging_mixin.py:154} INFO - [2024-06-24T01:54:59.612+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dags2.py
+[2024-06-24T01:54:59.637+0000] {processor.py:839} INFO - DAG(s) dict_keys(['my_dag_name2']) retrieved from /opt/airflow/dags/dags2.py
+[2024-06-24T01:54:59.785+0000] {logging_mixin.py:154} INFO - [2024-06-24T01:54:59.785+0000] {manager.py:499} INFO - Created Permission View: %s
+[2024-06-24T01:54:59.803+0000] {logging_mixin.py:154} INFO - [2024-06-24T01:54:59.803+0000] {manager.py:499} INFO - Created Permission View: %s
+[2024-06-24T01:54:59.813+0000] {logging_mixin.py:154} INFO - [2024-06-24T01:54:59.813+0000] {manager.py:499} INFO - Created Permission View: %s
+[2024-06-24T01:54:59.814+0000] {logging_mixin.py:154} INFO - [2024-06-24T01:54:59.814+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-06-24T01:54:59.831+0000] {logging_mixin.py:154} INFO - [2024-06-24T01:54:59.831+0000] {dag.py:2963} INFO - Creating ORM DAG for my_dag_name2
+[2024-06-24T01:54:59.847+0000] {logging_mixin.py:154} INFO - [2024-06-24T01:54:59.847+0000] {dag.py:3722} INFO - Setting next_dagrun for my_dag_name2 to 2021-01-01T00:00:00+00:00, run_after=2021-01-02T00:00:00+00:00
+[2024-06-24T01:54:59.873+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags2.py took 0.272 seconds
+[2024-06-24T01:55:29.954+0000] {processor.py:157} INFO - Started process (PID=289) to work on /opt/airflow/dags/dags2.py
+[2024-06-24T01:55:29.959+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dags2.py for tasks to queue
+[2024-06-24T01:55:29.970+0000] {logging_mixin.py:154} INFO - [2024-06-24T01:55:29.969+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dags2.py
+[2024-06-24T01:55:30.019+0000] {processor.py:839} INFO - DAG(s) dict_keys(['my_dag_name2']) retrieved from /opt/airflow/dags/dags2.py
+[2024-06-24T01:55:30.120+0000] {logging_mixin.py:154} INFO - [2024-06-24T01:55:30.119+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-06-24T01:55:30.169+0000] {logging_mixin.py:154} INFO - [2024-06-24T01:55:30.169+0000] {dag.py:3722} INFO - Setting next_dagrun for my_dag_name2 to 2021-01-01T00:00:00+00:00, run_after=2021-01-02T00:00:00+00:00
+[2024-06-24T01:55:30.195+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags2.py took 0.255 seconds
